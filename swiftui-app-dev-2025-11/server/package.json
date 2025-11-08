@@ -1,0 +1,36 @@
+{
+  "name": "silverorange-native-app-server",
+  "version": "0.1.0",
+  "description": "Example API server",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "private": true,
+  "scripts": {
+    "start": "DEBUG=api tsx watch ./src/index.ts",
+    "test": "node -e \"console.log('No tests yet!')\"",
+    "lint": "eslint 'src/**/*.ts'",
+    "prettier": "prettier --list-different 'src/**/*.ts'",
+    "prettier-write": "prettier --write 'src/**/*.ts'"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "debug": "^4.4.3",
+    "dotenv-flow": "^4.1.0",
+    "express": "^5.1.0",
+    "knuth-shuffle-seeded": "^1.0.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "@types/cors": "^2.8.19",
+    "@types/debug": "^4.1.12",
+    "@types/express": "^5.0.5",
+    "@types/node": "^22.13.14",
+    "eslint": "^9.38.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2"
+  }
+}
